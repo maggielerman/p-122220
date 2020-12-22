@@ -1,0 +1,56 @@
+<div class="controls"> 
+
+            <!-- text filter control -->
+            <div>
+                <input
+                    data-jplist-control="textbox-filter"
+                    data-group="data-group-1"
+                    data-name="my-filter-1"
+                    data-path=".title"
+                    type="text"
+                    value=""
+                    data-clear-btn-id="name-clear-btn"
+                    placeholder="Filter by Name" />
+
+                <button type="button" id="name-clear-btn">Clear</button>
+            </div>
+            
+    <div
+    
+                data-jplist-control="pagination"
+                data-group="data-group-1"
+                data-items-per-page="12"
+                data-current-page="0"
+                data-name="pagination1">
+            
+
+        <div class="row mb-3">
+        
+            <button type="button" data-type="first">«</button>
+            <button type="button" data-type="prev">‹</button>
+
+            <div class="jplist-holder" data-type="pages">
+                <button type="button" data-type="page">{pageNumber}</button>
+            </div>
+            
+            <button type="button" data-type="next">›</button>
+            <button type="button" data-type="last">»</button>
+        
+        </div>
+        
+        <div class="row">
+        
+            <!-- items per page select -->
+            <select data-type="items-per-page">
+                <option value="12"> 12 per page </option>
+                <option value="24"> 24 per page </option>
+                <option value="48"> 48 per page </option>
+                <option value="96"> view all </option>
+            </select>
+
+            <span data-type="info">
+                Page {pageNumber} of {pagesNumber}
+            </span>
+        </div>
+    </div>
+ </div>

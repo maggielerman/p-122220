@@ -108,7 +108,7 @@ module.exports = function(eleventyConfig) {
 
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
+    dataTemplateEngine: "njk", 
     dir: {
       input: ".",
       includes: "_includes",

@@ -1,0 +1,21 @@
+<div id="product-grid01" data-jplist-group="data-group-1" class="columns is-mobile is-multiline m-4">
+{% for product in products %}
+
+<div data-jplist-item class="column is-half-mobile is-one-quarter-desktop">
+  <div itemscope itemtype="https://schema.org/Product">
+    <div class="is-equal-height">
+         <figure class="image is-1x1">
+          <img itemprop="image"src="{{product.img01}}" alt="{{product.description}},{{product.tags}}">
+        </figure>
+        <div class="media-content">
+          <p class="title is-5" itemprop="name">{{product.name}}</p>
+            <span itemprop="priceCurrency" content="USD"></span>
+          <p class="is-small" itemprop="price" content="{{product.price}}">{{product.price}}</p>    
+        </div>
+    </div>
+    </div>   
+
+
+    </div>
+{% endfor %}
+</div>
