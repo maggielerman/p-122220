@@ -1,0 +1,58 @@
+<!-- layout.nunjucks -->
+<!DOCTYPE html>
+
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+  <head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+	<meta name="twitter:widgets:theme" content="light">
+	<meta property="og:title" content="10th Street" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="Your-Image-Url" />
+	<meta property="og:description" content="10th Stret" />
+	{# <meta name="p:domain_verify" content="309cf53522210fc1a039bccf7012edd9"/> #}
+	<meta http-equiv="Content-Type" content="application/json"/>
+
+	<title>P_121420</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/images/theme-mountain-favicon.ico">
+	<link rel="preconnect" href="https://app.snipcart.com">
+	<link rel="preconnect" href="https://cdn.snipcart.com">
+	
+	
+
+	<!-- Font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+	{# <link rel="stylesheet" href="./css/sidebar-alt.css"> #}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="/_includes/assets/css/bulma.css">
+	{# <link rel="stylesheet" href="./star-filter/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./star-filter/css/styles.min.css">
+	<link rel="stylesheet" href="./star-filter/css/wallpapers.css"> #}
+
+	<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.css" />
+  </head>
+  
+  <body>
+  
+    {% block content %} 
+     <!-- unique page content (ex. index.njk) -->
+    {% endblock %}
+
+
+	<!-- Js -->
+   	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	{# <script  src="./js/nav.js"></script> #}
+	<script  src="/_includes/assets/js/jplist.min.js"></script>
+	<script>
+            jplist.init();
+    </script>
+
+	<script async src="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.js"></script>
+	<div hidden id="snipcart" data-api-key="YWJkYTFlYzYtZjg1Ny00ZTljLTk1Y2ItNTg5MTUxOTdhMzg5NjM3MzQ4MzE2MjQzNzk3MzAx"></div>
+  </body>
+</html>

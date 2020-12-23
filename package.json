@@ -16,7 +16,7 @@
     "email": "dan.urbanowicz@gmail.com",
     "url": "https://www.danurbanowicz.com/"
   },
-  "license": "MIT",
+  "license": "MIT", 
   "bugs": {
     "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
   },

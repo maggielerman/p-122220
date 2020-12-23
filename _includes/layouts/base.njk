@@ -15,9 +15,17 @@
 		<main>
 			{{ layoutContent | safe }} 
 		</main>
-
 		{% include "components/footer.njk" %}
 
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script src='/_includes/assets/js/jplist.min.js'></script>
+		<script>
+            jplist.init();
+    	</script>
+  		{# <script>{{ js | jsmin | safe }}</script> #}
+		{# <script  src="./js/nav.js"></script> #}
+		<script async src="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.js"></script>
+		<div hidden id="snipcart" data-api-key="YWJkYTFlYzYtZjg1Ny00ZTljLTk1Y2ItNTg5MTUxOTdhMzg5NjM3MzQ4MzE2MjQzNzk3MzAx"></div>
 	</body>
 
 </html>

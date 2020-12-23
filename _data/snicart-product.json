@@ -1,0 +1,36 @@
+{
+  "id": "JSON_PRODUCT",
+  "name":  "JSON Product",
+  "url": "/products.json",
+  "price": 20.00,
+  "image": "http://placehold.it/300x300",
+  "inventoryManagementMethod":  "Variant", 
+  "variants": [
+    {
+      "variation": [
+        {
+          "name": "Color",
+          "option": "Red"
+        },
+        {
+          "name": "Size",
+          "option": "Small"
+        }
+      ],
+      "stock": 10,
+      "allowOutOfStockPurchases":  true
+    }
+  ],
+  "customFields": [
+    {
+      "name": "Size",
+      "options": "Small|Medium|Large",
+      "type": "dropdown"
+    },
+    {
+      "name": "Color",
+      "options": "Red|Blue|Green",
+      "type": "dropdown"
+    }
+  ]
+}

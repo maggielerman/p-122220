@@ -63,17 +63,17 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify HTML output
-  // eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-  //   if (outputPath.indexOf(".html") > -1) {
-  //     let minified = htmlmin.minify(content, {
-  //       useShortDoctype: true,
-  //       removeComments: true,
-  //       collapseWhitespace: true
-  //     });
-  //     return minified;
-  //   }
-  //   return content;
-  // });
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if (outputPath.indexOf(".html") > -1) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+    return content;
+  });
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
@@ -98,7 +98,7 @@ module.exports = function(eleventyConfig) {
   );
 
   return {
-    templateFormats: ["md", "njk", "html"],
+    templateFormats: ["md", "njk", "html", "liquid"],
 
     // If your site lives in a different subdirectory, change this.
     // Leading or trailing slashes are all normalized away, so don’t worry about it.
@@ -106,7 +106,7 @@ module.exports = function(eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "njk",
+    markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk", 
     dir: {
