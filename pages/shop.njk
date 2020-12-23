@@ -1,0 +1,19 @@
+layout: layouts/_layout.njk
+section: shop
+permalink: /shop/index.html
+eleventyNavigation:
+  key: shop
+  order: 4 
+--- 
+<!-- index.njk -->
+{# {% extends "layouts/_layout.njk" %} #}
+
+{% block content %}
+{# {% include "partials/megamenu.njk" %} #}
+{# 
+{% include "partials/hero.njk" %} #}
+{% include "_includes/partials/_filter-group-1.njk"%}
+{% include "_includes/partials/_product-grid-group-1.njk" %}
+{% include "_includes/partials/_filter-group-1.njk" %}
+
+{% endblock %}

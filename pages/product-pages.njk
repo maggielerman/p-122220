@@ -1,0 +1,9 @@
+---
+pagination:
+    data: products
+    size: 1
+    alias: product
+permalink: "products/{{ product.id | slug }}/"
+---
+
+ {% include "_includes/partials/product-page.njk" %}

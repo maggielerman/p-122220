@@ -1,7 +1,7 @@
 <!doctype html>
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
-	{% include "components/head.njk" %}
+	{% include "partials/head.njk" %}
 
 	<body>
 
@@ -9,13 +9,13 @@
 			<em>
 				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
 			</em>
-			{% include "components/nav.njk" %}
+			{% include "partials/nav.njk" %}
 		</header>
 
 		<main>
 			{{ layoutContent | safe }} 
 		</main>
-		{% include "components/footer.njk" %}
+		{% include "partials/footer.njk" %}
 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 		<script src='/_includes/assets/js/jplist.min.js'></script>
